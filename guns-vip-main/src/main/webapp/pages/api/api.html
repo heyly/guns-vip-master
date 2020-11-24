@@ -1,0 +1,41 @@
+@layout("/common/_container.html",{js:["/assets/api/api.js"]}){
+
+<div class="layui-body-header">
+    <span class="layui-body-header-title">api接口访问</span>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm12 layui-col-md12 layui-col-lg12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-form toolbar">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">api路径</label>
+                            <div class="layui-input-block">
+                                <input id="apiPath" name="path" width="500px" class="layui-input" type="text" placeholder="访问路径"/>
+                            </div>
+                            <label class="layui-form-label">文本域</label>
+                            <div class="layui-input-block">
+                                <textarea id="content" style="width: 500px" name="content" placeholder="请输入内容" class="layui-textarea"></textarea>
+                            </div>
+                            <div class="layui-inline">
+                                <button id="btnSearch" class="layui-btn icon-btn"><i class="layui-icon">&#xe615;</i>搜索</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">返回结果</label>
+                        <div class="layui-input-block">
+<!--                            <input id="url" width="500px" class="layui-input" type="text" placeholder="访问路径"/>-->
+                            <pre><code id="json"></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+@}
